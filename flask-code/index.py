@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():  # put application's code here
-    return '在此输入apikey 样式:sk-s5S5BoV... 可以淘宝购买八九块钱,认准里面包含18美金的,代买加微信:xytx_000   10块一个 赚你2块'
+    return '测试后端接口，返回成功！'
 
 
 @app.route('/message',methods = ['POST'])
@@ -41,5 +41,6 @@ def mess():
         return res
 
 
+
 if __name__ == '__main__':
-    app.run('127.0.0.1',port=80)
+    app.run('127.0.0.1', port=80)
