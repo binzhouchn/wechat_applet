@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():  # put application's code here
-    return '测试成功！'
+    return '测试后端接口，返回成功！'
 
 
 @app.route('/message',methods = ['POST'])
@@ -39,6 +39,7 @@ def mess():
             "code":412
         }
         return res
+
 
 
 if __name__ == '__main__':
